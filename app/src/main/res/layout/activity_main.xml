@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    android:orientation="vertical">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       android:textSize="30sp"
+       android:text="欢迎注册"
+       android:gravity="center_horizontal"
+       android:textColor="#f00d0d"/>
+
+   <TableRow
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="20sp"
+          android:text="用户名："/>
+
+      <EditText
+          android:layout_height="wrap_content"
+          android:inputType="textPersonName"
+          android:background="@android:drawable/edit_text"
+          android:id="@+id/name"
+          android:hint="不能为空"
+          />
+   </TableRow>
+
+   <TableRow
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="20sp"
+           android:text="密码："/>
+
+      <EditText
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:inputType="textPassword"
+          android:ems="10"
+          android:hint="6~15位"
+          android:id="@+id/psd"
+          android:background="@android:drawable/edit_text"/>
+   </TableRow>
+
+   <TableRow
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="20sp"
+          android:text="确认："/>
+
+      <EditText
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:inputType="textPassword"
+          android:ems="10"
+          android:id="@+id/psd2"
+          android:hint="密码确认"
+          android:background="@android:drawable/edit_text"/>
+   </TableRow>
+
+   <TableRow
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       android:orientation="horizontal">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="20sp"
+          android:text="性别："/>
+
+      <RadioGroup
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+
+          android:orientation="horizontal">
+
+          <RadioButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="男"
+              android:textSize="20sp"
+              android:checked="true"
+              android:id="@+id/male"/>
+
+         <RadioButton
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="女"
+             android:textSize="20sp"
+             android:layout_marginLeft="50dp"
+             android:id="@+id/female"
+             android:checked="false"/>
+      </RadioGroup>
+   </TableRow>
+
+   <TableRow
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp">
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="所在地"
+           android:textSize="8pt"
+           android:id="@+id/cityBtn"
+           android:textColor="#323eac"/>
+
+      <EditText
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/city"
+          android:hint="户籍所在地"/>
+   </TableRow>
+
+   <TableRow
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp">
+
+      <Button
+          android:text="注册"
+          android:id="@+id/rBtn"
+          android:layout_weight="1"
+          android:textSize="8pt"
+          android:textColor="#e91919"/>
+   </TableRow>
+
+</TableLayout>
